@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-container">
+    <div class="profile-header">
+        <img src="{{ url_for('static', filename='profile_image.png') }}" alt="Profile Picture">
+        <h1>Albert Thomas</h1>
+        <p>thomas123</p>
+        <p>Kingston, Jamaica</p>
+        <p>{{ date_joined }}</p> <!-- Date -->
+        <p>Tech enthusiast. Passionate about coding and design. Always learning!</p>
+    </div>
+    
+    <div class="stats">
+        <div class="stat">
+            <p><strong>Posts:</strong> 120</p>
+        </div>
+        <div class="stat">
+            <p><strong>Followers:</strong> 500</p>
+        </div>
+        <div class="stat">
+            <p><strong>Following:</strong> 180</p>
+        </div>
+    </div>
+
+    <button class="follow-btn">Follow</button>
+</div>
+{% endblock %}
